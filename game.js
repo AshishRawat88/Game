@@ -67,7 +67,7 @@ function shuffleCards() {
     cards.forEach((card, index) => {
         card.classList.remove("flip");
         let ImgTag = card.querySelector(".back-view img");
-        ImgTag.src = `/game img/pokemon-${arr[index]}.jpg`;
+        ImgTag.src = `gameimg/pokemon-${arr[index]}.jpg`;
         card.addEventListener("click", flipCard);
     });
 }
